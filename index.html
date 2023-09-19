@@ -7,24 +7,20 @@
 
     <title>Hello world!</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build.aframe-ar.js"></script>
   </head>
-  <body>
-    <!-- this is the start of content -->
-    <h1>
-      Hello World!
-    </h1>
-    <p>
-      This starter gives you everything you need to start working on a new
-      website, and nothing more. If you're looking for something a little more
-      opinionated, try remixing
-      <a href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-        >~glitch-hello-website</a
-      >.
-    </p>
+  <body style="margin : 0px; overflow: scroll;">
+    <a-scene embedded arjs>
+    <a-box position="0 0.5 0" material="opacity: 0.5">
+      </a-box>
+      <a-marker-camera preset="hiro">
+      </a-marker-camera>
+    </a-scene>
+    
   </body>
+  
+
 </html>
